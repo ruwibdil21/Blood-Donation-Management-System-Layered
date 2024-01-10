@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="RequestDetails" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.blood.controller.RequestDetailsFormController">
+   <children>
+      <Text fill="#bf0404" layoutX="22.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ru Blood Donation">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="146.0" layoutY="8.0">
+         <image>
+            <Image url="@../Image/img.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="37.0" layoutY="97.0" prefHeight="301.0" prefWidth="272.0" />
+      <TableView fx:id="tblRequestDetails" layoutX="92.0" layoutY="118.0" prefHeight="267.0" prefWidth="554.0">
+        <columns>
+          <TableColumn fx:id="colNeederId" prefWidth="164.80003356933594" text="NeederId" />
+          <TableColumn fx:id="colBloodBagId" prefWidth="164.0" text="BloodBagId" />
+            <TableColumn fx:id="colDescription" prefWidth="224.79998779296875" text="Description" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="129.0" fitWidth="266.0" layoutX="452.0" layoutY="11.0">
+         <image>
+            <Image url="@../Image/download(3).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
